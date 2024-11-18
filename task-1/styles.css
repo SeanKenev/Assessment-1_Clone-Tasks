@@ -1,0 +1,123 @@
+/* Base Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column; /* Stacking logo and menu vertically */
+    align-items: center;
+    padding: 20px;
+    background-color: #d3d3d3;
+}
+
+.logo img {
+    width: 80px; /* Size remains the same */
+    margin-bottom: 20px; /* Space between logo and navigation menu */
+}
+
+.main-menu {
+    margin-top: 0; /* Reset any extra top margin */
+}
+
+.main-menu ul {
+    display: flex;
+    gap: 400px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #000; /* Example color, adjust as needed */
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: normal; /* Make the text normal-weight */
+}
+
+.main-menu a:hover {
+    color: #000000;
+}
+
+/* Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Three Narrow Columns */
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.column h2 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: one for large image, one for the 2x2 collage */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.image-gallery .large-image {
+    grid-column: 1 / 2; /* Take up the first column */
+}
+
+.image-gallery .image-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create 2x2 grid for smaller images */
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* About the Author */
+.about-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about-author .author-info {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.about-author .author-info h2 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.author-photo {
+    width: 200px; /* Fixed size for the author photo */
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #d3d3d3;
+    color: #000000;
+    text-align: center; /* Center the footer content */
+    padding: 10px 0;
+}
